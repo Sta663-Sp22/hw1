@@ -1,3 +1,10 @@
+---
+format: 
+  gfm:
+    keep-yaml: false
+jupyter: python3
+---
+
 # Homework 1
 
 Due by 5:00 pm on Friday, February 4th.

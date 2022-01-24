@@ -1,3 +1,12 @@
+---
+format:
+  gfm:
+    keep-yaml: false
+jupyter: python3
+pagetitle: readme
+toc-title: Table of contents
+---
+
 # Homework 1
 
 Due by 5:00 pm on Friday, February 4th.
@@ -42,7 +51,7 @@ p = wordle.puzzle(123)
 p.guess("acute")
 ```
 
-<div class="cell-output-display" execution_count="42">
+<div class="cell-output-display" execution_count="10">
 
     ['🟨', '⬜', '⬜', '⬜', '⬜']
 
@@ -56,7 +65,7 @@ p.guess("acute")
 p.guess("lairs")
 ```
 
-<div class="cell-output-display" execution_count="43">
+<div class="cell-output-display" execution_count="11">
 
     ['⬜', '🟩', '🟨', '⬜', '🟨']
 
@@ -70,7 +79,7 @@ p.guess("lairs")
 p.guess("basin")
 ```
 
-<div class="cell-output-display" execution_count="44">
+<div class="cell-output-display" execution_count="12">
 
     ['🟩', '🟩', '🟩', '🟩', '⬜']
 
@@ -84,7 +93,7 @@ p.guess("basin")
 p.guess("basij")
 ```
 
-<div class="cell-output-display" execution_count="45">
+<div class="cell-output-display" execution_count="13">
 
     ['🟩', '🟩', '🟩', '🟩', '🟩']
 
@@ -98,7 +107,7 @@ p.guess("basij")
 p
 ```
 
-<div class="cell-output-display" execution_count="46">
+<div class="cell-output-display" execution_count="14">
 
     Wordle puzzle: (Solved)
     1. 🟨 ⬜ ⬜ ⬜ ⬜ (acute)
@@ -116,7 +125,7 @@ p
 p.is_solved()
 ```
 
-<div class="cell-output-display" execution_count="47">
+<div class="cell-output-display" execution_count="15">
 
     True
 
@@ -130,7 +139,7 @@ p.is_solved()
 p.n_guesses()
 ```
 
-<div class="cell-output-display" execution_count="48">
+<div class="cell-output-display" execution_count="16">
 
     4
 
