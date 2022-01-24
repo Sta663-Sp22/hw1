@@ -72,7 +72,7 @@ class puzzle(object):
                     let_occur[i] = 0
         
         res = [self.colors[max(x)] for x in zip([0,0,0,0,0], let_occur, let_match)]
-        self.history.append(" ".join(res))
+        self.history.append(" ".join(res) + " ("+guess+")")
             
         if guess == self.word:
             self.solved = True
