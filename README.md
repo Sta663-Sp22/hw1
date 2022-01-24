@@ -1,10 +1,3 @@
----
-format: gfm
-jupyter: python3
-pagetitle: readme
-toc-title: Table of contents
----
-
 # Homework 1
 
 Due by 5:00 pm on Friday, February 4th.
