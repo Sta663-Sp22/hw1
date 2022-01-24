@@ -9,9 +9,9 @@ toc-title: Table of contents
 
 Due by 5:00 pm on Friday, February 4th.
 
-### Task 1 - Wordle
+## Task 1 - Wordle
 
-#### Background
+### Background
 
 Recently the word game [WORDLE](https://www.powerlanguage.co.uk/wordle/)
 has seemed to take over the world, or at least twitter. Your task here
@@ -40,7 +40,7 @@ random secret word or `wordle.puzzle(seed=123)` to get a specific word,
 just change the value of seed. Once created, you can make guesses with
 the `guess()` method. See an example game below.
 
-#### Example game
+### Example game
 
 <div class="cell" execution_count="2">
 
@@ -49,7 +49,7 @@ p = wordle.puzzle(123)
 p.guess("acute")
 ```
 
-<div class="cell-output-display" execution_count="2">
+<div class="cell-output-display" execution_count="42">
 
     ['🟨', '⬜', '⬜', '⬜', '⬜']
 
@@ -63,7 +63,7 @@ p.guess("acute")
 p.guess("lairs")
 ```
 
-<div class="cell-output-display" execution_count="3">
+<div class="cell-output-display" execution_count="43">
 
     ['⬜', '🟩', '🟨', '⬜', '🟨']
 
@@ -77,7 +77,7 @@ p.guess("lairs")
 p.guess("basin")
 ```
 
-<div class="cell-output-display" execution_count="4">
+<div class="cell-output-display" execution_count="44">
 
     ['🟩', '🟩', '🟩', '🟩', '⬜']
 
@@ -91,7 +91,7 @@ p.guess("basin")
 p.guess("basij")
 ```
 
-<div class="cell-output-display" execution_count="5">
+<div class="cell-output-display" execution_count="45">
 
     ['🟩', '🟩', '🟩', '🟩', '🟩']
 
@@ -105,7 +105,7 @@ p.guess("basij")
 p
 ```
 
-<div class="cell-output-display" execution_count="6">
+<div class="cell-output-display" execution_count="46">
 
     Wordle puzzle: (Solved)
     1. 🟨 ⬜ ⬜ ⬜ ⬜ (acute)
@@ -123,9 +123,23 @@ p
 p.is_solved()
 ```
 
-<div class="cell-output-display" execution_count="7">
+<div class="cell-output-display" execution_count="47">
 
     True
+
+</div>
+
+</div>
+
+<div class="cell" execution_count="8">
+
+``` python
+p.n_guesses()
+```
+
+<div class="cell-output-display" execution_count="48">
+
+    4
 
 </div>
 
@@ -143,7 +157,7 @@ for this version of the game:
 -   If you want to give up and see the secret word, use the `reveal()`
     method. Once done this will prevent you from guessing further.
 
-#### Solver
+### Solver
 
 Using the function definition provided below, implement a solver which
 will attempt to solve any Wordle puzzle object it is given. You may
@@ -153,7 +167,7 @@ by the `worlde` module, see `wordle.words`. Your solution may make use
 of this word list in order to better solve the puzzles, be careful to
 not modify this list accidentally.
 
-#### Assessment
+### Assessment
 
 We will be assessing your solver by applying it to a large random sample
 of puzzles and determining how many puzzles were solved and what the

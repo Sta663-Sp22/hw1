@@ -1,6 +1,7 @@
 ---
 jupyter: python3
 format: gfm
+keep-yaml: FALSE
 ---
 
 # Homework 1
@@ -8,9 +9,9 @@ format: gfm
 Due by 5:00 pm on Friday, February 4th.
 
 
-### Task 1 - Wordle
+## Task 1 - Wordle
 
-#### Background
+### Background
 
 Recently the word game [WORDLE](https://www.powerlanguage.co.uk/wordle/) has seemed to take over the world, or at least twitter. Your task here is to come up with a Wordle puzzle solver in Python. 
 
@@ -24,7 +25,7 @@ import wordle
 
 To play a game you can create a puzzle with `wordle.puzzle()` for a random secret word or `wordle.puzzle(seed=123)` to get a specific word, just change the value of seed. Once created, you can make guesses with the `guess()` method. See an example game below.
 
-#### Example game
+### Example game
 
 ```{python}
 p = wordle.puzzle(123)
@@ -51,17 +52,22 @@ p
 p.is_solved()
 ```
 
+```{python}
+p.n_guesses()
+```
+
+
 From the session above you can see that the progress of the game can be checked by printing the puzzle object and the solution status is returned by the `is_solved()` method. A couple of other important rules for this version of the game:
 
 * All guesses must be 5 letters, lowercase, and a word in the word list.
 * The solution must be found within 6 guesses or the puzzle is failed (and further guesses will not be allowed).
 * If you want to give up and see the secret word, use the `reveal()` method. Once done this will prevent you from guessing further.
 
-#### Solver
+### Solver
 
 Using the function definition provided below, implement a solver which will attempt to solve any Wordle puzzle object it is given. You may assume that the puzzle is new and that no guesses have been made and that the secret word is part one of the words in the word list provided by the `worlde` module, see `wordle.words`. Your solution may make use of this word list in order to better solve the puzzles, be careful to not modify this list accidentally.
 
-#### Assessment
+### Assessment
 
 We will be assessing your solver by applying it to a large random sample of puzzles and determining how many puzzles were solved and what the average number of guesses needed.
 
