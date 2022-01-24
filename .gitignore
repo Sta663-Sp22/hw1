@@ -4,3 +4,4 @@ __pycache__/*
 .virtual_documents/*
 .Rproj.user
 *.Rproj
+.Rhistory
