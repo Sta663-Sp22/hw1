@@ -42,7 +42,7 @@ p = wordle.puzzle(123)
 p.guess("acute")
 ```
 
-<div class="cell-output-display" execution_count="10">
+<div class="cell-output-display" execution_count="2">
 
     ['🟨', '⬜', '⬜', '⬜', '⬜']
 
@@ -56,7 +56,7 @@ p.guess("acute")
 p.guess("lairs")
 ```
 
-<div class="cell-output-display" execution_count="11">
+<div class="cell-output-display" execution_count="3">
 
     ['⬜', '🟩', '🟨', '⬜', '🟨']
 
@@ -70,7 +70,7 @@ p.guess("lairs")
 p.guess("basin")
 ```
 
-<div class="cell-output-display" execution_count="12">
+<div class="cell-output-display" execution_count="4">
 
     ['🟩', '🟩', '🟩', '🟩', '⬜']
 
@@ -84,7 +84,7 @@ p.guess("basin")
 p.guess("basij")
 ```
 
-<div class="cell-output-display" execution_count="13">
+<div class="cell-output-display" execution_count="5">
 
     ['🟩', '🟩', '🟩', '🟩', '🟩']
 
@@ -98,7 +98,7 @@ p.guess("basij")
 p
 ```
 
-<div class="cell-output-display" execution_count="14">
+<div class="cell-output-display" execution_count="6">
 
     Wordle puzzle: (Solved)
     1. 🟨 ⬜ ⬜ ⬜ ⬜ (acute)
@@ -116,7 +116,7 @@ p
 p.is_solved()
 ```
 
-<div class="cell-output-display" execution_count="15">
+<div class="cell-output-display" execution_count="7">
 
     True
 
@@ -130,7 +130,7 @@ p.is_solved()
 p.n_guesses()
 ```
 
-<div class="cell-output-display" execution_count="16">
+<div class="cell-output-display" execution_count="8">
 
     4
 
