@@ -1,0 +1,36 @@
+on: push
+name: Repo Checks
+jobs:
+  check_allowed_files:
+    runs-on: self-hosted
+    container:
+      image: ghcr.io/sta663-sp22/sta663-base:main
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+    - name: Check Files
+      run: |
+        checklist::quit_on_failure({
+          checklist::check_allowed_files(
+            c("hw1.ipynb", "advent.py", "wordle.py", "README.*", "data/*")
+          )
+        })
+      shell: Rscript {0}
+  check_renders:
+    needs: check_allowed_files
+    runs-on: self-hosted
+    container:
+      image: ghcr.io/sta663-sp22/sta663-base:main
+    steps:x
+    - name: Checkout
+      uses: actions/checkout@v2
+    
+    - name: Check Renders
+      run: |
+        quarto render hw1.ipynb --execute --to html
+    
+    - name: Archive html
+      uses: actions/upload-artifact@v2
+      with:
+        name: html
+        path: hw1.html
